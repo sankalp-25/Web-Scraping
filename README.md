@@ -14,4 +14,5 @@ The same data is also uploaded to the sqlite database with
 5. Date on which the article was published
 
 How to run :
+
 python Scraping.py
