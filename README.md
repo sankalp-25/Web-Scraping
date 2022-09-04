@@ -2,7 +2,7 @@
 This application is in scraping.py.
 The data is fetched from "https://www.theverge.com/" using the python library known as Beautiful soup.
 The parameters that are used from the data scraped were url, author, date, headline.
-After scraping/fetching data, a .csv(comma seperated value) file is created with date as its name in the format "DDMMYYYY_verge.csv".
+After scraping/fetching data, a .csv(comma seperated value) file is created with date as its name and in the format "DDMMYYYY_verge.csv".
 
 The same data is also uploaded to the sqlite database with
 1. Id as its primary key, which is unique for every article with no duplicates in it.
