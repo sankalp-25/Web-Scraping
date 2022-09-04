@@ -72,6 +72,15 @@ for i in details:
     if(len(kl)):
         break
 
+#If we run the code now and again if we run now, and after a couple of minutes if we run code again it may produce "_verge.csv" file which will have nothing but just coloumn names in it. So to avoid this we are fetching the latest date and using it as our csv file name
+if(len(kl)==0):
+    lastdate=cursor.execute('''select date from scraping''')
+    for h in lastdate:
+        if(h[0]!='N/A'):
+            g=h[0]
+            kl=g.split('-')
+            kl=kl[::-1]
+            break
 #here converting the list ['DD','MM','YYYY] into a string DDMMYYYY 
 ks=""
 for i in kl:
